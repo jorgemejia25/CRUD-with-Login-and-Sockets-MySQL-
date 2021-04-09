@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b106f2414d.js" crossorigin="anonymous"></script>
+    <title>Crear Producto</title>
+    <link rel="stylesheet" href="css/create.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <%- include('partials/sidenav'); %>
+
+        <div class="main">
+            <div class="full">
+                <form class="form_group">
+                    <label>Nombre: </label><br>
+                    <input name="nombre" id="nombre"><br>
+                    <label>Categoría: </label><br>
+                    <input name="categoria" id="categoria"><br>
+                    <label>Id Cliente: </label><br>
+                    <input type="number" id="IdCliente"><br>
+                    <!-- <input type="file" name="foto" id=""><br> -->
+                    <div class="bot"><button class="btn btn-outline-dark bg-white">Enviar</button></div>
+                </form>
+
+
+            </div>
+            <div class="mensaje">
+                <div class="titulo">Datos ingresados con exito</div>
+                <div class="cuerpo">Puedes seguir ingresando datos.</div>
+            </div>
+            <div class="invisible">
+                <%= user.id %>
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/listen.js"></script>
+        <script src="js/create.js"></script>
+</body>
+
+</html>

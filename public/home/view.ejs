@@ -1,0 +1,61 @@
+<!--Prueba botón 1-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b106f2414d.js" crossorigin="anonymous"></script>
+    <title>View</title>
+    <link rel="stylesheet" href="css/view.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="pag">
+        <%- pag %>
+    </div>
+    <%- include('partials/sidenav'); %>
+
+        <div class="main">
+
+            <div class="products">
+                <h2>List of Products</h2>
+                <!-- <div>Nombre</div> -->
+                <div class="fields">
+                    <table>
+                        <tr class="headers">
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Categoría</th>
+                            <th>ID Cliente</th>
+                            <th>Edit</th>
+                            <th>Borrar</th>
+
+                        </tr>
+
+
+                    </table>
+                </div>
+
+
+                <div>
+                    <a class="boton1ref" href=""> <button class="boton1">Siguiente <i class="icon fas fa-angle-double-right"></i></button></a>
+                    <a class="boton2ref" href=""><button class="boton2"><i class="icon2 fas fa-angle-double-left"></i> Anterior</button></a>
+                </div>
+            </div>
+
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="js/listen.js"></script>
+        <script src="js/view.js"></script>
+</body>
+
+</html>

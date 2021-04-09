@@ -1,0 +1,121 @@
+.sidenav {
+    height: 100%;
+    /* Full-height: remove this if you want "auto" height */
+    width: 160px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #111;
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+
+
+/* The navigation menu links */
+
+.sidenav a:first-child {
+    padding-top: 90px;
+}
+
+.sidenav a {
+    padding: 4px 8px 6px 16px;
+    font-family: 'Comfortaa', cursive;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Style page content */
+
+.main {
+    /* margin-left: 160px; */
+    /* Same as the width of the sidebar */
+    padding: 0px;
+}
+
+.full {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    /* text-align: center; */
+    width: 30%;
+    height: 80%;
+    padding: 30px;
+    background-color: #111;
+    color: rgb(189, 189, 189);
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 10px 48px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 48px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 48px -5px rgba(0, 0, 0, 0.75);
+}
+
+.full label {
+    margin-bottom: 10px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.full input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.full select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.full .bot {
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.full .btn {
+    width: 20%;
+    font-family: 'Comfortaa', cursive;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.8em;
+}
+
+.mensaje {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(126, 196, 105);
+    border-radius: 10px;
+    width: 400px;
+    height: 90px;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mensaje .titulo {
+    background-color: rgb(219, 250, 189);
+    padding: 3px 5px;
+    text-align: center;
+    font-size: 1.2em;
+    border-bottom: 2px solid rgb(126, 196, 105);
+}
+
+.mensaje .cuerpo {
+    padding: 3px 5px 15px 10px;
+}
